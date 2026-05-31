@@ -1,18 +1,16 @@
-const cards=document.querySelectorAll(".card");
+<section id="tools">
 
-window.addEventListener("scroll",()=>{
+<h2>SEO Tools</h2>
 
-cards.forEach(card=>{
+<div class="grid">
 
-const top=card.getBoundingClientRect().top;
+<div>Google Search Console</div>
+<div>Google Analytics</div>
+<div>Ahrefs</div>
+<div>SEMrush</div>
+<div>Screaming Frog</div>
+<div>Google Keyword Planner</div>
 
-if(top < window.innerHeight-100){
+</div>
 
-card.style.opacity="1";
-card.style.transform="translateY(0px)";
-
-}
-
-});
-
-});
+</section>
