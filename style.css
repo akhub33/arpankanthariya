@@ -1,11 +1,16 @@
-body{
-    background:#111;
-    color:white;
-    text-align:center;
-    font-family:Arial;
-    padding-top:100px;
+window.addEventListener("scroll",()=>{
+
+document.querySelectorAll(".card").forEach(card=>{
+
+let pos=card.getBoundingClientRect().top;
+
+if(pos < window.innerHeight-100){
+
+card.style.opacity="1";
+card.style.transform="translateY(0px)";
+
 }
 
-h1{
-    font-size:50px;
-}
+});
+
+});
